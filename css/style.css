@@ -1,0 +1,100 @@
+ /* DEBUG
+        div {
+            border:  1px solid gray;
+        }
+        td {
+            border: 1px groove black;
+        }
+
+ /* ALL PAGES */
+ *{
+    box-sizing: border-box;
+ }
+a {
+    text-decoration: none;
+}
+html {
+    overflow: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+body {
+    color: black;
+    font-family: Verdana;
+    margin: 0;
+    min-height: 100%;
+    background-color: #000;    
+    text-align: center;
+}
+.header {
+    margin-top: -8vh;
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+}
+.card-field
+{
+    width: 10000px;
+    margin-top: 8vh;
+    height: 84  0px;
+}
+.card {
+    vertical-align: top;
+    display: inline-block;
+    width: 500px;
+    height: 800px;
+    padding: 10px;
+    margin: 20px;
+    background-color: grey;
+}
+.heightH1 {
+    height: 5vh;
+}
+.heightIMG {
+    height: 60vh;
+    width: 100%;
+}
+.heightTXT {
+    padding: 30px;
+    height: 26vh;
+}
+
+.heightBTN {
+    height: 30px;
+    width: 120px;
+    margin: 0 auto;
+
+}
+.BTN {
+    background-color: white;
+    color: black;
+    font-size: 18pt;
+}
+
+/* FONTS */
+.txt-white {
+    color: white;
+    text-shadow: 0 2px 4px black;
+}
+.txt-color-0 {
+    color: gray;
+}
+.f12 {
+    font-size: 12pt;
+}
+.f14 {
+    font-size: 14pt;
+}
+.f16 {
+    font-size: 16pt;
+}
+.f24 {
+    font-size: 24pt;
+}
+.f32 {
+    font-size: 32pt;
+}
+.bold {
+    font-weight: bold;
+}

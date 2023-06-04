@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Темная сила</title>
+  <link rel="stylesheet" href="../css/itc-slider.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/itc-slider.js" defer></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+
+
+    .slider__container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .slider__items {
+      counter-reset: slide;
+    }
+
+    .slider__item {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      counter-increment: slide;
+      height: 100vh;
+      position: relative;
+    }
+
+    .slider__item::before {
+      content:"";
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .slider__item:nth-child(1) {
+      background-image: url(../img/fly.png);
+      background-size: cover;
+    }
+
+    .slider__item:nth-child(2) {
+      background-image: url(../img/goodbo1.png);
+      background-size: cover;
+    }
+
+    .slider__item:nth-child(3) {
+      background-image: url(../img/dart-cat.png);
+      background-size: cover;
+    }
+
+    .slider__item:nth-child(4) {
+      background-image: url(../img/gun.png);
+      background-size: cover;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="slider" data-slider="itc-slider" data-loop="true">
+      <div class="slider__container">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+
+              <!-- Контент 1 -->
+              <div class="heightH1">
+                <h1 class="f32 txt-white"> Имперский летчик </h1>
+              </div>
+              <div class="heightIMG">
+              </div>
+              <div class="heightTXT Tf24 txt-white">
+                <p class="bold"> Имперский летчик это не просто профессия, а состояние души.</p>
+                <p> 
+                  В период расцвета Галактической Империи в ряды пилотов Имперского флота входили бесчисленные выпускники академий и клоны. Во времена Осколка Империи и правления возрождённого Императора Палпатина, Империя была вынуждена беречь TIE пилотов из-за резкого сокращения их числа, и запустила серию автономных TIE/D истребителей, которые выступали в качестве судов поддержки, прикрывавших живых пилотов.
+
+Пилоты повстанцев прозвали TIE пилотов «Ведроголовыми», из-за глухих шлемов, бывших частью их лётных костюмов. Среди военнослужащих сил Империи было распространено другое прозвище — «наездники гробов», полученное за высокую смертность среди пилотов TIE истребителей.
+                </p>
+              </div>
+              <div class="heightBTN">
+                <button class="BTN"> Хочу</button>
+              </div>
+
+            </div>
+            <div class="slider__item">
+              
+             <!-- Контент 2 -->
+             <div class="heightH1">
+              <h1 class="f32 txt-white"> Старший МурДоктор </h1>
+            </div>
+            <div class="heightIMG">
+            </div>
+            <div class="heightTXT Tf24 txt-white">
+              <p class="bold"> Пушистый специалист по здоровью имперцев.</p>
+              <p> 
+                Доктор, который делает уколы, но не противный, а очень даже милый.
+                Лечит имперское войско с помощью мурчаний и не только.
+Как кошки помогают людям справляться со стрессом, рассказали ученые
+ Сектора 146Б, как кошки в целом и коты в частности помогают людям справиться со стрессом.
+Результаты исследования опубликованы в издании Journal of Applied Behavior Analysis.
+Исследователи опросили более тысячи владельцев кошек и выяснили, 
+что животные помогают человеку справиться со стрессом и улучшить самочувствие.
+              </p>
+            </div>
+            <div class="heightBTN">
+              <button class="BTN"> Хочу</button>
+            </div>
+
+
+            </div>
+            <div class="slider__item">
+              
+              <!-- Контент 3 -->
+              <div class="heightH1">
+                <h1 class="f32 txt-white"> Клон Дарта Вейдера </h1>
+              </div>
+              <div class="heightIMG">
+              </div>
+              <div class="heightTXT Tf24 txt-white">
+                <p class="bold"> Я буду копировать тебя вечно.</p>
+                <p> 
+                   Кот похожий на Дарта Вейдера. Обманывает повставцев и поднимает настроение 
+                   в рядах имперских войск<div class=""></div>
+                </p>
+              </div>
+              <div class="heightBTN">
+                <button class="BTN"> Хочу</button>
+              </div>
+
+
+            </div>
+            <div class="slider__item">
+             
+              <!-- Контент 4 -->
+              <div class="heightH1">
+                <h1 class="f32 txt-white"> Оружие клонов </h1>
+              </div>
+              <div class="heightIMG">
+              </div>
+              <div class="heightTXT Tf24 txt-white">
+                <p class="bold"> Потому что у котиков реакция лучше. </p>
+                <p> 
+                   Связи с многочисленными промахами на поле боя постановлением адмирала Люмберксюльгом было установлено следующее:
+                   "Мы должны встроить в котов лазерное оборудование и натренировать стрелять в повставцев".
+                </p>
+              </div>
+              <div class="heightBTN">
+                <button class="BTN"> Хочу</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="slider__control" data-slide="prev"></a>
+      <a href="#" class="slider__control" data-slide="next"></a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

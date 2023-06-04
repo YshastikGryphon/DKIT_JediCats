@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Темная сила</title>
+  <link rel="stylesheet" href="../css/itc-slider.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/itc-slider.js" defer></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+
+
+    .slider__container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .slider__items {
+      counter-reset: slide;
+    }
+
+    .slider__item {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      counter-increment: slide;
+      height: 100vh;
+      position: relative;
+    }
+
+    .slider__item::before {
+      content:"";
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .slider__item:nth-child(1) {
+      background-image: url(../img/chybacca.png);
+      background-size: cover;
+    }
+
+    .slider__item:nth-child(2) {
+      background-image: url(../img/impersonator.png);
+      background-size: cover;
+    }
+
+    .slider__item:nth-child(3) {
+      background-image: url(../img/r2d2.png);
+      background-size: cover;
+    }
+
+    .slider__item:nth-child(4) {
+      background-image: url(../img/yoda.png);
+      background-size: cover;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="slider" data-slider="itc-slider" data-loop="true">
+      <div class="slider__container">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+
+              <!-- Контент 1 -->
+              <div class="heightH1">
+                <h1 class="f32 txt-white"> Чубакка </h1>
+              </div>
+              <div class="heightIMG">
+              </div>
+              <div class="heightTXT Tf24 txt-white">
+                <p class="bold"> Не просто талисман.</p>
+                <p> 
+                  Просто кот. Будет издавать смешные звуки и вызывать овации у публики.
+                </p>
+              </div>
+              <div class="heightBTN">
+                <button class="BTN"> Хочу</button>
+              </div>
+
+            </div>
+            <div class="slider__item">
+              
+             <!-- Контент 2 -->
+             <div class="heightH1">
+              <h1 class="f32 txt-white"> Импостер </h1>
+            </div>
+            <div class="heightIMG">
+            </div>
+            <div class="heightTXT Tf24 txt-white">
+              <p class="bold"> Стоп. Это был солдат повставцев?! </p>
+              <p> 
+                Тайный агент способный 
+                проникнуть даже на самые защищенные объекты. С помощью его
+                 уникальных способностей вы сможете узнать все о любом объекте.
+Тайный агент может проникать в любые помещения,
+ будь то звезда смерти, авианосец, торговый центр или любое другое здание.
+Он найдет способ пройти сквозь охрану и достичь секретной комнаты.
+Для него нет никаких препядствий!
+              </p>
+            </div>
+            <div class="heightBTN">
+              <button class="BTN"> Хочу</button>
+            </div>
+
+
+            </div>
+            <div class="slider__item">
+              
+              <!-- Контент 3 -->
+              <div class="heightH1">
+                <h1 class="f32 txt-white"> R2D-C4T </h1>
+              </div>
+              <div class="heightIMG">
+              </div>
+              <div class="heightTXT Tf24 txt-white">
+                <p class="bold"> А вы думали что? Там микросхема? Там микрокот!</p>
+                <p> 
+                   Настоящий гений-хакер, способный взломать любую защиту!
+                </p>
+              </div>
+              <div class="heightBTN">
+                <button class="BTN"> Хочу</button>
+              </div>
+
+
+            </div>
+            <div class="slider__item">
+             
+              <!-- Контент 4 -->
+              <div class="heightH1">
+                <h1 class="f32 txt-white"> Джедай </h1>
+              </div>
+              <div class="heightIMG">
+              </div>
+              <div class="heightTXT Tf24 txt-white">
+                <p class="bold"> Световой меч делает бонк!. </p>
+                <p> 
+                  Короче, джедай — это не тот, кто может уничтожить планету. 
+                  Джедай — это тот, кому не нужна планета, потому что он может 
+                  за пять минут уничтожить все человечество.
+                </p>
+              </div>
+              <div class="heightBTN">
+                <button class="BTN"> Хочу</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="slider__control" data-slide="prev"></a>
+      <a href="#" class="slider__control" data-slide="next"></a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
